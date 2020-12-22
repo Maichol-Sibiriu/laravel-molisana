@@ -5,8 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Laravel</title>
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     </head>
     <body>
-        <h1>ciao {{ $user }}</h1>
+
+        {{-- header --}}
+        @include('partials.header')
+
+        {{-- main --}}
+        @include('partials.main')
+
+        {{-- footer --}}
+        @include('partials.footer')    
+    
+
     </body>
 </html>
