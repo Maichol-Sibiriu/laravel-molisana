@@ -2,7 +2,7 @@
 
     @if ( !empty($long) )
     {{-- lunghe --}}
-    <div>
+    <div class="container">
        @foreach ($long as $card)
             <div>
 
