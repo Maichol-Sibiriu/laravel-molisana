@@ -137,5 +137,25 @@ Route::get('/', function () {
         ],
     ];
 
-    return view('home', ['cards' => $data ]);
+    $long = [];
+    $short = [];
+    $veryShort = [];
+
+    foreach ($data as $card) {
+        
+        if( $card['tipo'] == 'lunga' ){
+
+            $long[] = $card;
+        }
+        elseif( $card['tipo'] == 'corta' ){
+            $short[] = $card;
+        }
+        elseif( $card['tipo'] == 'cortissima' ){
+            $veryShort[] = $card;
+        }
+        
+    }
+    
+
+    return view('home', ['long' => $long, 'short' => $short, 'veryShort' => $veryShort ]);
 });
