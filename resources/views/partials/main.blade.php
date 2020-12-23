@@ -9,7 +9,9 @@
                <h1>{{ $card['tipo'] }}</h1>
                <img src="{{ $card['src'] }}" alt="">
                <h3>{{ $card['titolo'] }}</h3>
-               <p>{{ $card['descrizione'] }}</p>
+               <div class="text">
+                  <p>{!! $card['descrizione'] !!}</p>
+               </div>
 
             </div>           
        @endforeach
@@ -18,15 +20,16 @@
 
     @if ( !empty($short) )
     {{-- corte --}}
-    <div>
+    <div class="container">
         @foreach ($short as $card)
              <div>
  
                 <h1>{{ $card['tipo'] }}</h1>
                 <img src="{{ $card['src'] }}" alt="">
                 <h3>{{ $card['titolo'] }}</h3>
-                <p>{{ $card['descrizione'] }}</p>
- 
+                <div class="text">
+                  <p>{!! $card['descrizione'] !!}</p>
+                </div>
              </div>           
         @endforeach
     </div>
@@ -34,16 +37,18 @@
 
     @if ( !empty($veryShort) )
     {{-- cortissime --}}
-    <div>
+    <div class="container">
         @foreach ($veryShort as $card)
-             <div>
+            <div>
  
-                <h1>{{ $card['tipo'] }}</h1>
-                <img src="{{ $card['src'] }}" alt="">
-                <h3>{{ $card['titolo'] }}</h3>
-                <p>{{ $card['descrizione'] }}</p>
- 
-             </div>           
+               <h1>{{ $card['tipo'] }}</h1>
+               <img src="{{ $card['src'] }}" alt="">
+               <h3>{{ $card['titolo'] }}</h3>
+               <div class="text">
+                  <p>{!! $card['descrizione'] !!}</p>
+               </div>
+
+            </div>           
         @endforeach
     </div>
     @endif
