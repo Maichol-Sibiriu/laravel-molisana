@@ -10,10 +10,6 @@
                <img src="{{ $card['src'] }}" alt="">
                <h3>{{ $card['titolo'] }}</h3>
                <a href="{{ route('product', $card['id']) }}">vedi prodotto</a>
-               <div class="text">
-                  <p>{!! $card['descrizione'] !!}</p>
-               </div>
-
             </div>           
        @endforeach
     </div>
