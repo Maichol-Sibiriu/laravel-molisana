@@ -1,7 +1,7 @@
 <main>
     <div class="container">
         
-        <i class="fas fa-angle-left"></i>
+        <i class="fas fa-angle-left fa-2x"></i>
         
         <h1>{{ $product['titolo'] }}</h1>
         <img src="{{ $product['src-h'] }}" alt="">
@@ -11,7 +11,7 @@
            <p>{!! $product['descrizione'] !!}</p>
         </div>
 
-        <i class="fas fa-angle-right"></i>
+        <i class="fas fa-angle-right fa-2x"></i>
 
     </div>
 </main>
