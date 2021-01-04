@@ -3,7 +3,7 @@
         <img src="{{ asset('img/logo.png') }}" alt="">
     </div>
 
-    <div>
+    <div class="container">
         <ul>
             <li>
                 <a href="{{ route('home') }}">home</a>
