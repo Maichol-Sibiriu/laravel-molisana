@@ -6117,19 +6117,30 @@ readers do not read off random characters that represent icons */
   box-sizing: border-box;
 }
 
-img {
-  width: 250px;
-}
-
 .container {
   width: 80%;
   margin: 0 auto;
+}
+
+.img img {
+  width: 100%;
+}
+
+.product {
+  background-color: #b7dae5;
+}
+
+.home {
+  background-image: url("public/img/fondo-pag-speciali.jpg");
+}
+.home .content {
   display: flex;
   flex-wrap: wrap;
 }
-
-.text {
-  width: 200px;
-  height: 100px;
-  overflow-y: auto;
+.home .content .image {
+  width: 33%;
+  margin: 1%;
+}
+.home .content .image img {
+  width: 100%;
 }

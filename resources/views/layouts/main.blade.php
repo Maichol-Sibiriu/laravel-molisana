@@ -11,14 +11,14 @@
 
         {{-- header --}}
         @include('partials.header')
-
+ 
+        
         {{-- main --}}
-        @include('partials.main') 
-        <main>
-            @yield('content')
-        </main>  
+        @yield('content')
+          
 
         {{-- footer --}}
+        {{-- @include('partials.footer') --}}
 
     </body>
 </html>

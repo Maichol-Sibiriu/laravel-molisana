@@ -1,12 +1,27 @@
 .container{
     width: 80%;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
 }
 
-.text{
-    width: 200px;
-    height: 100px;
-    overflow-y: auto;
+.img img{
+    width: 100%;
+}
+
+.product{
+  background-color: #b7dae5;
+}
+
+.home{
+    background-image: url('public/img/fondo-pag-speciali.jpg');
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        .image{
+            width: 33%;
+            margin: 1%;
+            img{
+                width: 100%;
+            }
+        }
+    }
 }

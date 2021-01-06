@@ -41,7 +41,11 @@ Route::get('/', function () {
     // dd($long, $short, $veryShort);
     
 
-    return view('home', ['long' => $long, 'short' => $short, 'veryShort' => $veryShort ]);
+    // return view('home', ['long' => $long, 'short' => $short, 'veryShort' => $veryShort ]);
+
+    return view('home', compact('long', 'short', 'veryShort'));
+
+
 })->name('home');
 
 Route::get('/product/{id}', function ($id) {
@@ -50,8 +54,9 @@ Route::get('/product/{id}', function ($id) {
     $data = config('database_molisana');
  
     $product = $data[$id];
+    $length = count($data) - 1;
 
-    return view('product', ['product' => $product]);
+    return view('product', compact('product', 'length', 'id'));
       
 })->name('product');
 
