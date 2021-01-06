@@ -6131,7 +6131,7 @@ readers do not read off random characters that represent icons */
 }
 
 .home {
-  background-image: url("public/img/fondo-pag-speciali.jpg");
+  background-image: url("../img/fondo-pag-speciali.jpg");
 }
 .home .content {
   display: flex;
